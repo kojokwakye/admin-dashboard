@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="side-menu">
+        <div class="logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <title>bookshelf</title>
+            <path
+              d="M9 3V18H12V3H9M12 5L16 18L19 17L15 4L12 5M5 5V18H8V5H5M3 19V21H21V19H3Z"
+            />
+          </svg>
+          <span>librolog</span>
+        </div>
+        <ul class="main-menu">
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>home</title>
+              <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg
+            >home
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>card-account-details</title>
+              <path
+                d="M2,3H22C23.05,3 24,3.95 24,5V19C24,20.05 23.05,21 22,21H2C0.95,21 0,20.05 0,19V5C0,3.95 0.95,3 2,3M14,6V7H22V6H14M14,8V9H21.5L22,9V8H14M14,10V11H21V10H14M8,13.91C6,13.91 2,15 2,17V18H14V17C14,15 10,13.91 8,13.91M8,6A3,3 0 0,0 5,9A3,3 0 0,0 8,12A3,3 0 0,0 11,9A3,3 0 0,0 8,6Z"
+              /></svg
+            >profile
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>email</title>
+              <path
+                d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"
+              /></svg
+            >messages
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>clock-time-five</title>
+              <path
+                d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C17.5 22 22 17.5 22 12S17.5 2 12 2M14 17L11 11.8V7H12.5V11.4L15.3 16.3L14 17Z"
+              /></svg
+            >history
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>note-text</title>
+              <path
+                d="M14,10H19.5L14,4.5V10M5,3H15L21,9V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5C3,3.89 3.89,3 5,3M5,12V14H19V12H5M5,16V18H14V16H5Z"
+              /></svg
+            >tasks
+          </li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <title>account-group</title>
+              <path
+                d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"
+              /></svg
+            >communities
+          </li>
+        </ul>
+        <div>
+          <ul class="settings">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>cog</title>
+                <path
+                  d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"
+                /></svg
+              >settings
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>help-box-multiple</title>
+                <path
+                  d="M16 20V22H4C2.9 22 2 21.1 2 20V7H4V20H16M20 2H8C6.9 2 6 2.9 6 4V16C6 17.1 6.9 18 8 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2M15 14H13V12H15V14M16.8 8.8C16.5 9.2 16.1 9.5 15.7 9.7C15.5 9.9 15.3 10 15.2 10.2C15 10.4 15 10.7 15 11H13C13 10.5 13.1 10.1 13.3 9.8C13.5 9.5 13.8 9.2 14.3 8.9C14.6 8.7 14.8 8.5 14.9 8.3C15.1 8.1 15.1 7.8 15.1 7.5C15.1 7.2 15 6.9 14.8 6.7C14.6 6.5 14.4 6.4 14 6.4C13.7 6.4 13.5 6.5 13.3 6.6C13.1 6.8 13 7 13 7.3H11.1C11.1 6.5 11.3 5.9 11.9 5.5C12.6 5.2 13.3 5 14.2 5C15.1 5 15.9 5.2 16.4 5.7C16.9 6.2 17.2 6.8 17.2 7.5C17.2 8 17 8.4 16.8 8.8Z"
+                /></svg
+              >support
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>shield-account</title>
+                <path
+                  d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M17.13,17C15.92,18.85 14.11,20.24 12,20.92C9.89,20.24 8.08,18.85 6.87,17C6.53,16.5 6.24,16 6,15.47C6,13.82 8.71,12.47 12,12.47C15.29,12.47 18,13.79 18,15.47C17.76,16 17.47,16.5 17.13,17Z"
+                /></svg
+              >privacy
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="top-bar">
+          <div class="topnav-bar">
+            <div class="searchbar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>magnify</title>
+                <path
+                  d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"
+                />
+              </svg>
+              <input type="search" name="" id="" placeholder="search" />
+            </div>
+
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <title>bell</title>
+                <path
+                  d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21"
+                />
+              </svg>
+              <img src="images/id.jpg" alt="profile-pic" />
+              <span>augustus</span>
+            </div>
+          </div>
+          <div class="user-info">
+            <div class="info">
+              <img src="images/id.jpg" alt="profile pciture" />
+              <span>hi, augustus (@oorgustus)</span>
+            </div>
+            <div class="buttons">
+              <ul>
+                <li><a href="#"></a>new</li>
+                <li><a href="#"></a>new</li>
+                <li><a href="#"></a>new</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <p>overview</p>
+        <div class="card-container">
+          <div class="card">
+            <p class="title">Article Title</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud...
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Article Title</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud...
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Article Title</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud...
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Article Title</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud...
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Article Title</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud...
+            </p>
+          </div>
+          <div class="card">
+            <p class="title">Article Title</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud...
+            </p>
+          </div>
+          <div class="right-bar">
+            <div class="card trending">
+              <p>trending</p>
+              <div>
+                <img src="/images/id.jpg" alt="" />
+                <span>Lorem ipsum dolor</span>
+              </div>
+              <div>
+                <img src="/images/id.jpg" alt="" />
+                <span>Lorem ipsum dolor</span>
+              </div>
+              <div>
+                <img src="/images/id.jpg" alt="" />
+                <span>Lorem ipsum dolor</span>
+              </div>
+            </div>
+            <div class="card trending">
+              <p>trending</p>
+              <div>
+                <img src="/images/id.jpg" alt="" />
+                <span>Lorem ipsum dolor</span>
+              </div>
+              <div>
+                <img src="/images/id.jpg" alt="" />
+                <span>Lorem ipsum dolor</span>
+              </div>
+              <div>
+                <img src="/images/id.jpg" alt="" />
+                <span>Lorem ipsum dolor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
