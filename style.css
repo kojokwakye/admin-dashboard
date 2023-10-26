@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 body {
   background-color: #57a1be;
 }
@@ -14,7 +18,8 @@ body {
 .side-menu {
   background-color: #fff;
   display: grid;
-  text-align: center;
+  grid-template-rows: 1fr 2fr 2fr;
+  /* gap: 20px; */
 }
 
 svg {
@@ -44,32 +49,45 @@ img {
   display: grid;
   grid-template-rows: repeat(2, 100px);
   align-items: center;
+  /* margin: 12px; */
 }
 
+.searchbar {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  width: 770px;
+}
+i.fa-solid.fa-magnifying-glass {
+  font-size: 25px;
+  color: #b8c6ce;
+  padding: 0 10px;
+}
 .user-info {
+  /* display: flex; */
+  /* justify-content: space-around; */
+  /* align-items: center; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  align-items: center;
+  /* margin: 5px; */
 }
 input[type="search"] {
-  margin: 0 auto;
-  height: 45px;
-  padding: 0 20px;
-  font-size: 1rem;
-  border: 1px solid #d0cfce;
+  margin: 0px 15px;
+  height: 40px;
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
   outline: none;
 }
-button {
-  color: #000000c4;
-  font-size: 1em;
-  width: 150px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #000000c4;
-  outline: none;
-  padding: 1em 1.5em;
-  margin: auto;
-}
+
+/* .buttons {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
 .card {
   border: 1px solid red;
   padding: 15px;
@@ -78,7 +96,7 @@ button {
 }
 .container {
   display: grid;
-  grid-template-columns: 250px 1fr;
+  grid-template-columns: 285px 1fr;
   height: 100vh;
 }
 .card-container {
@@ -91,6 +109,7 @@ button {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+  margin: 5px;
 }
 .right-bar {
   background-color: yellowgreen;
@@ -98,4 +117,25 @@ button {
   grid-row: 1/4;
   grid-column: 3;
   align-content: space-between;
+}
+
+img.logoimg {
+  width: 100px;
+  height: 100px;
+}
+
+.logo {
+  display: flex;
+  height: 160px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.notifs {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+i.fa-solid.fa-bell {
+  font-size: 24px;
 }
