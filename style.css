@@ -24,6 +24,7 @@ body {
   display: grid;
   grid-template-columns: 300px 1fr;
   height: 100vh;
+  /* margin: 20px; */
 }
 
 ul,
@@ -47,6 +48,15 @@ a {
   background-color: cadetblue;
 }
 
+.card {
+  background-color: rosybrown;
+  border: 1px solid black;
+  padding: 15px;
+  text-align: center;
+  height: 200px;
+  /* width: 438px; */
+}
+
 .main {
   display: grid;
   grid-template-rows: 200px 1fr;
@@ -55,14 +65,7 @@ a {
 .card-container {
   background-color: cornflowerblue;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 2fr 1fr;
   gap: 10px;
-}
-
-.card {
-  background-color: rosybrown;
-  border: 1px solid black;
-  padding: 15px;
-  text-align: center;
-  height: 215px;
+  margin: 10px;
 }
