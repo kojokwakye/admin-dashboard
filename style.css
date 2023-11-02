@@ -62,14 +62,10 @@ a {
 
 .card.card-six {
   background-color: orange;
-  grid-column: 3;
-  grid-row: 2/4;
 }
 
 .card.card-three {
   background-color: rgb(244 24 24);
-  grid-column: 3;
-  /* grid-row: 1/3; */
 }
 
 header {
@@ -79,11 +75,12 @@ header {
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .book-cards {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr); */
+  grid-template-columns: 1fr 1fr 1fr;
 }
