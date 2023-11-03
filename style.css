@@ -1,5 +1,5 @@
 * {
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,9 +24,6 @@ body {
   height: 100%; /* force the BODY element to match the height of the HTML element */
 }
 
-/* header {
-} */
-
 .container {
   height: 100vh;
   display: grid;
@@ -38,7 +35,23 @@ li {
   list-style: none;
   text-decoration: none;
 }
+ul.main-menu {
+  font-size: 1.2em;
+}
+ul.main-menu li {
+  height: 20px;
+  display: flex;
+  margin-top: 5px;
+  padding: 20px;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
 
+ul.main-menu li:hover {
+  background-color: white;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -49,8 +62,86 @@ a {
   grid-row: 1/4;
 }
 
+i {
+  margin-right: 15px;
+}
+img.logoimg {
+  /* width: 80px; */
+  height: 80px;
+}
+
+.logo {
+  margin-bottom: 43px;
+  padding: 26px;
+  display: flex;
+  align-items: center;
+}
+
+span.page-name {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
 .top-bar {
   background-color: cadetblue;
+}
+
+.topnav-bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin: 10px 30px;
+}
+.searchbar {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  width: 770px;
+}
+i.fa-solid.fa-magnifying-glass {
+  font-size: 31px;
+  color: #b8c6ce;
+  padding: 0 11px;
+  cursor: pointer;
+}
+.user-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 0 30px;
+}
+
+.notifs {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: 400px;
+}
+i.fa-solid.fa-bell {
+  font-size: 24px;
+}
+.info {
+  display: flex;
+  align-items: center;
+}
+
+ul.button-section {
+  display: flex;
+  gap: 40px;
+  margin-left: 400px;
+}
+
+li {
+}
+
+input[type="search"] {
+  margin: 0px 15px;
+  height: 40px;
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
 }
 
 .card {
@@ -90,4 +181,8 @@ header {
 
 .right-bar {
   display: grid;
+}
+
+.settings {
+  margin-top: 50px;
 }
