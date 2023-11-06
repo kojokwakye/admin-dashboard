@@ -16,13 +16,15 @@ body::-webkit-scrollbar-thumb {
 html {
   min-height: 100%;
 }
-body {
-  height: 100vh;
-}
+
 .container {
   display: grid;
   grid-template-columns: 300px 1fr;
-  height: 100%;
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 ul,
 li {
@@ -45,13 +47,11 @@ ul.main-menu li {
 ul.main-menu li:hover {
   background-color: white;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-}
+
 .side-menu {
   background-color: wheat;
   grid-row: 1 / 4;
+  height: 100%;
 }
 i {
   margin-right: 15px;
@@ -65,6 +65,7 @@ img.logoimg {
   display: flex;
   align-items: center;
 }
+
 span.page-name {
   font-size: 2.2em;
   font-weight: bold;
@@ -117,8 +118,7 @@ ul.button-section {
   gap: 40px;
   margin-left: 400px;
 }
-li {
-}
+
 input[type="search"] {
   margin: 0px 9px;
   height: 40px;
@@ -128,29 +128,28 @@ input[type="search"] {
   outline: none;
 }
 .cards {
-  background-color: rosybrown;
+  /* background-color: rosybrown; */
   border: 1px solid black;
   padding: 20px;
   margin: 5px;
   width: auto;
+  border-left: 3px solid #be2655db;
 }
-.card {
-  padding: 20px;
-}
+
 .trending-card {
-  background-color: orange;
+  /* background-color: orange; */
   grid-area: 2 / 3 / 4;
+  /* height: 100%; */
 }
 .activity-card {
-  background-color: rgb(244, 24, 24);
+  /* background-color: rgb(244, 24, 24); */
   grid-area: 1 / 3 / 2;
-}
-header {
-  background-color: rebeccapurple;
+  /* height: 90%; */
 }
 .card-container {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* height: 100%; */
+  grid-template-columns: 2fr 1fr;
+  /* height: 100vh; */
 }
 .book-cards {
   display: grid;
@@ -160,10 +159,14 @@ header {
 }
 .right-bar {
   display: grid;
-  row-gap: 10px;
-  margin: 5px;
   height: 100%;
+  row-gap: 10px;
 }
 .settings {
   margin-top: 50px;
+}
+
+.little-icons {
+  display: flex;
+  justify-content: center;
 }
