@@ -1,5 +1,4 @@
 * {
-  /* outline: red solid 1px; */
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
@@ -16,7 +15,6 @@ body::-webkit-scrollbar-thumb {
 html {
   min-height: 100%;
 }
-
 .container {
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -47,11 +45,9 @@ ul.main-menu li {
 ul.main-menu li:hover {
   background-color: white;
 }
-
 .side-menu {
-  background-color: wheat;
+  background-color: #191b1d;
   grid-row: 1 / 4;
-  height: 100%;
 }
 i {
   margin-right: 15px;
@@ -65,14 +61,13 @@ img.logoimg {
   display: flex;
   align-items: center;
 }
-
 span.page-name {
   font-size: 2.2em;
   font-weight: bold;
   margin-left: 20px;
 }
 .top-bar {
-  background-color: cadetblue;
+  background-color: #191b1d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -118,7 +113,6 @@ ul.button-section {
   gap: 40px;
   margin-left: 400px;
 }
-
 input[type="search"] {
   margin: 0px 9px;
   height: 40px;
@@ -128,28 +122,24 @@ input[type="search"] {
   outline: none;
 }
 .cards {
-  /* background-color: rosybrown; */
-  border: 1px solid black;
-  padding: 20px;
-  margin: 5px;
+  padding: 10px;
+  margin: 10px;
   width: auto;
-  border-left: 3px solid #be2655db;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid #b7d0e0;
 }
-
 .trending-card {
-  /* background-color: orange; */
   grid-area: 2 / 3 / 4;
-  /* height: 100%; */
 }
 .activity-card {
-  /* background-color: rgb(244, 24, 24); */
   grid-area: 1 / 3 / 2;
-  /* height: 90%; */
 }
 .card-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  /* height: 100vh; */
 }
 .book-cards {
   display: grid;
@@ -165,8 +155,11 @@ input[type="search"] {
 .settings {
   margin-top: 50px;
 }
-
 .little-icons {
   display: flex;
-  justify-content: center;
+  width: 100%;
+  padding-top: 7px;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #b7c6ce;
 }
