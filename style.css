@@ -15,10 +15,19 @@ body::-webkit-scrollbar-thumb {
 html {
   min-height: 100%;
 }
+
+body {
+  background-color: #e0f2fe;
+  color: white;
+}
 .container {
   display: grid;
   grid-template-columns: 300px 1fr;
   height: 100vh;
+  color: black;
+}
+h2 {
+  margin-left: 20px;
 }
 a {
   text-decoration: none;
@@ -41,13 +50,16 @@ ul.main-menu li {
   align-content: center;
   flex-wrap: wrap;
   text-align: center;
+  color: #dff2fd;
 }
 ul.main-menu li:hover {
-  background-color: white;
+  background-color: #e0f2fe;
+  color: black;
 }
 .side-menu {
-  background-color: #191b1d;
   grid-row: 1 / 4;
+  background-color: #111827;
+  color: white;
 }
 i {
   margin-right: 15px;
@@ -56,22 +68,25 @@ img.logoimg {
   height: 80px;
 }
 .logo {
-  margin-bottom: 40px;
+  margin-bottom: 74px;
   padding: 10px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgb(16 24 38 / 84%);
+  height: 120px;
 }
 span.page-name {
   font-size: 2.2em;
   font-weight: bold;
   margin-left: 20px;
+  color: #dff2fd;
 }
 .top-bar {
-  background-color: #191b1d;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 120px;
+  border-bottom: 1px solid rgb(16 24 38 / 84%);
 }
 .topnav-bar {
   display: grid;
@@ -129,7 +144,6 @@ input[type="search"] {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  border-left: 1px solid #b7d0e0;
 }
 .trending-card {
   grid-area: 2 / 3 / 4;
@@ -140,6 +154,9 @@ input[type="search"] {
 .card-container {
   display: grid;
   grid-template-columns: 2fr 1fr;
+
+  margin: 15px;
+  padding-top: 15px;
 }
 .book-cards {
   display: grid;
@@ -151,6 +168,8 @@ input[type="search"] {
   display: grid;
   height: 100%;
   row-gap: 10px;
+  border-left: 1px solid rgb(16 24 38 / 84%);
+  padding: 5px;
 }
 .settings {
   margin-top: 50px;
@@ -161,5 +180,13 @@ input[type="search"] {
   padding-top: 7px;
   justify-content: space-evenly;
   align-items: center;
-  border-top: 1px solid #b7c6ce;
+  border-top: 1px solid rgb(16 24 38 / 84%);
+  cursor: pointer;
+}
+.card {
+  border-bottom: 1px solid rgb(16 24 38 / 84%);
+}
+.fa-solid:hover {
+  cursor: pointer;
+  color: #2f2e2e;
 }
